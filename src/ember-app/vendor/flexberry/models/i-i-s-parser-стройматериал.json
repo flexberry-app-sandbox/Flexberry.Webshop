@@ -1,0 +1,105 @@
+﻿{
+  "name": "IISParserСтройматериал",
+  "modelName": "i-i-s-parser-стройматериал",
+  "className": "Стройматериал",
+  "nameSpace": "IIS.Parser",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "характеристики",
+      "relatedTo": "i-i-s-parser-характеристики",
+      "inverse": "стройматериал"
+    }
+  ],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "i-i-s-parser-стройматериал",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "AuditView",
+          "caption": "Характеристики",
+          "name": "характеристики",
+          "relatedTo": "i-i-s-parser-характеристики",
+          "inverse": null
+        }
+      ]
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
