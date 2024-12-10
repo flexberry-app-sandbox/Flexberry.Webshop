@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Test",
+  "name": "IISParsertestE",
+  "className": "testE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-parser-test",
+      "modelProjection": "testE"
+    }
+  ]
+}

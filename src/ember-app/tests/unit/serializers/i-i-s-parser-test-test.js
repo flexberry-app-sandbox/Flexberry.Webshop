@@ -1,9 +1,9 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-parser-системный-администратор', 'Unit | Serializer | i-i-s-parser-системный-администратор', {
+moduleForModel('i-i-s-parser-test', 'Unit | Serializer | i-i-s-parser-test', {
   // Specify the other units that are required for this test.
   needs: [
-    'serializer:i-i-s-parser-системный-администратор',
+    'serializer:i-i-s-parser-test',
     'service:syncer',
     'transform:file',
     'transform:decimal',

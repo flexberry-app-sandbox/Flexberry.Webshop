@@ -13,7 +13,19 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.index.caption'),
           title: i18n.t('forms.application.sitemap.index.title'),
           children: null
-        }, 
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.parser.caption'),
+          title: i18n.t('forms.application.sitemap.parser.title'),
+          children: [{
+            link: 'i-i-s-parser-test-l',
+            caption: i18n.t('forms.application.sitemap.parser.i-i-s-parser-test-l.caption'),
+            title: i18n.t('forms.application.sitemap.parser.i-i-s-parser-test-l.title'),
+            icon: 'briefcase',
+            children: null
+          }]
+        }
       ]
     };
   }),

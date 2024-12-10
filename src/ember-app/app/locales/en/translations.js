@@ -1,7 +1,10 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
+import IISParsertestLForm from './forms/i-i-s-parser-test-l';
 import IISParserФормаОтчетаForm from './forms/i-i-s-parser-форма-отчета';
+import IISParsertestEForm from './forms/i-i-s-parser-test-e';
+import IISParsertestModel from './models/i-i-s-parser-test';
 import IISParserЗапросДанныхУСистемыModel from './models/i-i-s-parser-запрос-данных-у-системы';
 import IISParserИсточникModel from './models/i-i-s-parser-источник';
 import IISParserИсточникиModel from './models/i-i-s-parser-источники';
@@ -22,6 +25,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-parser-test': IISParsertestModel,
     'i-i-s-parser-запрос-данных-у-системы': IISParserЗапросДанныхУСистемыModel,
     'i-i-s-parser-источник': IISParserИсточникModel,
     'i-i-s-parser-источники': IISParserИсточникиModel,
@@ -38,7 +42,7 @@ $.extend(true, translations, {
     'i-i-s-parser-характеристики': IISParserХарактеристикиModel
   },
 
-  'application-name': '',
+  'application-name': 'Parser',
 
   forms: {
     loading: {
@@ -77,7 +81,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': '',
+        'application-name': 'Parser',
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
@@ -88,8 +92,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: '',
-          title: ''
+          caption: 'Parser',
+          title: 'Parser'
         },
         'application-version': {
           caption: 'Addon version {{version}}',
@@ -101,7 +105,14 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
-
+        parser: {
+          caption: 'Parser',
+          title: 'Parser',
+          'i-i-s-parser-test-l': {
+            caption: 'Test',
+            title: ''
+          }
+        }
       }
     },
 
@@ -113,7 +124,9 @@ $.extend(true, translations, {
       'delete-success-message': 'Object deleted',
       'delete-error-message-caption': 'Delete operation failed'
     },
-    'i-i-s-parser-форма-отчета': IISParserФормаОтчетаForm
+    'i-i-s-parser-test-l': IISParsertestLForm,
+    'i-i-s-parser-форма-отчета': IISParserФормаОтчетаForm,
+    'i-i-s-parser-test-e': IISParsertestEForm
   },
 
 });

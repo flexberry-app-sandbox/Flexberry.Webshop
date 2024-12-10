@@ -9,6 +9,7 @@ moduleForModel('i-i-s-parser-ошибки', 'Unit | Serializer | i-i-s-parser-о
     'transform:decimal',
     'transform:guid',
 
+    'model:i-i-s-parser-test',
     'model:i-i-s-parser-запрос-данных-у-системы',
     'model:i-i-s-parser-источник',
     'model:i-i-s-parser-источники',

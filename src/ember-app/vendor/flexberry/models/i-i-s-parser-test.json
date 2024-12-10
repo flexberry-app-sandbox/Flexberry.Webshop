@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISParsertest",
+  "modelName": "i-i-s-parser-test",
+  "className": "test",
+  "nameSpace": "IIS.Parser",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "test",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "testE",
+      "modelName": "i-i-s-parser-test",
+      "attrs": [
+        {
+          "name": "test",
+          "caption": "Test",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "testL",
+      "modelName": "i-i-s-parser-test",
+      "attrs": [
+        {
+          "name": "test",
+          "caption": "Test",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

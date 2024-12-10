@@ -6,6 +6,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
+  this.route('i-i-s-parser-test-l');
+  this.route('i-i-s-parser-test-e',
+  { path: 'i-i-s-parser-test-e/:id' });
+  this.route('i-i-s-parser-test-e.new',
+  { path: 'i-i-s-parser-test-e/new' });
   this.route('i-i-s-parser-форма-отчета');
   this.route('null',
   { path: 'null/:id' });

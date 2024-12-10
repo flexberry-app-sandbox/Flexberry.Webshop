@@ -1,6 +1,22 @@
 ﻿{
-  "applicationCaption": "",
-  "applicationTitle": "",
-  "items": [],
+  "applicationCaption": "Parser",
+  "applicationTitle": "Parser",
+  "items": [
+    {
+      "link": null,
+      "menuName": "parser",
+      "caption": "Parser",
+      "title": "Parser",
+      "children": [
+        {
+          "link": "i-i-s-parser-test-l",
+          "menuName": null,
+          "caption": "Test",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
   "mobile": true
 }

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-parser-test-e",
+  "editForm": "i-i-s-parser-test-e",
+  "external": false,
+  "caption": "Test",
+  "name": "IISParsertestL",
+  "className": "testL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-parser-test",
+      "modelProjection": "testL"
+    }
+  ]
+}

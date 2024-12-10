@@ -1,14 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-parser-системный-администратор', 'Unit | Serializer | i-i-s-parser-системный-администратор', {
+moduleForModel('i-i-s-parser-test', 'Unit | Model | i-i-s-parser-test', {
   // Specify the other units that are required for this test.
   needs: [
-    'serializer:i-i-s-parser-системный-администратор',
-    'service:syncer',
-    'transform:file',
-    'transform:decimal',
-    'transform:guid',
-
     'model:i-i-s-parser-test',
     'model:i-i-s-parser-запрос-данных-у-системы',
     'model:i-i-s-parser-источник',
@@ -28,14 +22,13 @@ moduleForModel('i-i-s-parser-системный-администратор', 'Un
     'validator:date',
     'validator:belongs-to',
     'validator:has-many',
+    'service:syncer',
   ],
 });
 
-// Replace this with your real tests.
-test('it serializes records', function(assert) {
-  let record = this.subject();
+test('it exists', function(assert) {
+  let model = this.subject();
 
-  let serializedRecord = record.serialize();
-
-  assert.ok(serializedRecord);
+  // let store = this.store();
+  assert.ok(!!model);
 });

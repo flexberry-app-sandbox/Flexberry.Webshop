@@ -3,6 +3,7 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-parser-отчет', 'Unit | Model | i-i-s-parser-отчет', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-parser-test',
     'model:i-i-s-parser-запрос-данных-у-системы',
     'model:i-i-s-parser-источник',
     'model:i-i-s-parser-источники',
